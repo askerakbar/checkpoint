@@ -1,0 +1,45 @@
+{
+    "name": "askerakbar/checkpoint",
+    "autoload": {
+        "psr-4": {
+            "AskerAkbar\\Checkpoint\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AskerAkbar\\Checkpoint\\CheckpointServiceProvider"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AskerAkbar\\Checkpoint\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "lint": [
+            "@php vendor/bin/phpstan analyse --verbose --ansi"
+        ],
+        "test": [
+            "@php vendor/bin/pest"
+        ]
+    },
+    "require": {
+        "filament/spatie-laravel-settings-plugin": "3.x-dev",
+        "filament/notifications": "3.x-dev"
+    },
+    "require-dev": {
+        "pestphp/pest": "3.x-dev",
+        "orchestra/testbench": "9.x-dev",
+        "pestphp/pest-plugin-livewire": "3.x-dev",
+        "pestphp/pest-plugin-laravel": "3.x-dev",
+        "laravel/pint": "dev-main"
+    }
+}
