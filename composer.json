@@ -1,5 +1,14 @@
 {
     "name": "askerakbar/checkpoint",
+    "description": "This Filament PHP plugin improves login security by letting you customize rate-limiting settings like duration and the number of attempts. It also notifies admins about suspicious activity",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/askerakbar/checkpoint/",
+    "keywords": [
+        "filament",
+        "filament-auth",
+        "auth-notifications"
+    ],
     "autoload": {
         "psr-4": {
             "AskerAkbar\\Checkpoint\\": "src/"
@@ -31,7 +40,15 @@
             "@php vendor/bin/pest"
         ]
     },
+    "authors": [
+        {
+            "name": "Asker Akbar",
+            "homepage": "https://github.com/askerakbar",
+            "role": "Developer"
+        }
+    ],
     "require": {
+        "php": "^8.1",
         "filament/spatie-laravel-settings-plugin": "3.x-dev",
         "filament/notifications": "3.x-dev"
     },
