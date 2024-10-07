@@ -1,4 +1,4 @@
-# Checkpoint - Filament PHP Plugin
+# Checkpoint - Filament PHP plugin to enhance login security with custom rate limiting and admin alert notifications
 
 This Filament PHP plugin improves login security by letting you customize rate-limiting settings like duration and the number of attempts. It also notifies admins about suspicious activity
 
@@ -10,10 +10,16 @@ You can install the package via composer:
 composer require askerakbar/checkpoint -W
 ```
 
-You can publish and run the migrations with:
+This plugin requires Spatie's Laravel Settings package. Before running the Checkpoint migrations, you must first publish and run the settings migrations.
+
+To do this, use the following command:
 
 ```bash
 php artisan vendor:publish --provider="Spatie\LaravelSettings\LaravelSettingsServiceProvider" --tag="migrations"
+```
+Once that's complete, you can proceed with publishing and running the Checkpoint migrations:
+
+```bash
 php artisan vendor:publish --tag="checkpoint-migrations"
 php artisan migrate
 ```
