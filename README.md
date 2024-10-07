@@ -1,4 +1,6 @@
-# Checkpoint - Filament PHP plugin to enhance login security with custom rate limiting and admin alert notifications
+# Checkpoint - A Filament PHP Plugin to enhance login Security with custom rate limiting, lockout and admin alerts
+
+<img src="https://raw.githubusercontent.com/terminalcon/checkpoint/main/demo/settings.jpeg" width="75%"/>
 
 This Filament PHP plugin improves login security by letting you customize rate-limiting settings like duration and the number of attempts. It also notifies admins about suspicious activity
 
