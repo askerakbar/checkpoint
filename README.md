@@ -54,4 +54,4 @@ If you would like to contriubte, please feel free to submit pull requests or ope
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](License.md) for more information.
