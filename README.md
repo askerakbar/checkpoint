@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/terminalcon/checkpoint/main/demo/asker-akbar-checkpoint.jpg" width="100%"/>
+<img src="https://raw.githubusercontent.com/askerakbar/checkpoint/main/demo/asker-akbar-checkpoint.jpg" width="100%"/>
 
 # Checkpoint - A Filament PHP Plugin to enhance login Security with custom rate limiting, lockout and admin alerts
 
