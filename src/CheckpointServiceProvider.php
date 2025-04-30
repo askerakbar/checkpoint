@@ -5,7 +5,6 @@ namespace AskerAkbar\Checkpoint;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Illuminate\Filesystem\Filesystem;
 
 class CheckpointServiceProvider extends PackageServiceProvider
 {
@@ -30,5 +29,11 @@ class CheckpointServiceProvider extends PackageServiceProvider
 
     public function packageBooted(): void
     {
+    }
+
+    public function boot()
+    {
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'checkpoint');
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'checkpoint');
     }
 }
